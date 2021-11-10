@@ -51,6 +51,11 @@ def create_app(test_config=None):
         return render_template('index.html')
 
 
+    @app.route("/Welcome_Labyrinth",methods=['GET', 'POST'])
+    def Welcome_Labyrinth():
+        
+        return render_template('Welcome_Labyrinth.html')
+        
     #######################################################################
     #This function is the way you will change your score
     #The texts are going to be the text that will be shown in the next screen
@@ -126,7 +131,10 @@ def create_app(test_config=None):
 #######################################################################
 #Classic mode ended
 #######################################################################
-
+    @app.route("/traps",methods=['GET', 'POST'])
+    def traps():
+        print("")
+        return render_template('Traps_Monsters.html')
 
 
 #######################################################################

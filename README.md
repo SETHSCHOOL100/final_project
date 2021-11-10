@@ -13,7 +13,7 @@ pip install flask
 
 pip install flask_session
 
-cd /workspace/Example_Application/template-python-flask
+cd /workspace/final_project/template-python-flask
 
 export FLASK_APP=flaskr
 
