@@ -40,3 +40,10 @@ p {font-size: 25px;}
 .btn-block {
     margin: 5px
   }
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;}
