@@ -120,7 +120,7 @@ def create_app(test_config=None):
                 pass
 
             survival_index = session['survival_index']
-            
+            print(survival_index)
 
             player_death = session['player_death']
             next_page = session['next_page']
@@ -145,6 +145,7 @@ def create_app(test_config=None):
             session['intro_text'] = intro_text
             session['player_death'] = player_death
             session['next_page'] = next_page
+            
 
         else:
             print("MAJOR ERROR IN SURVIVAL BUTTON CLICK FUNCTION IF NOT GOING INTO THE FIRST ROUND")
@@ -188,7 +189,7 @@ def create_app(test_config=None):
         
         survival_button_clicking( intro_text, print_message_for_debug)
 
-        next_page = '/moving'
+        go_to_page = '/moving'
     
         return render_template('Traps_Monsters.html', pg_u_goto_after_clicked = go_to_page)
 
